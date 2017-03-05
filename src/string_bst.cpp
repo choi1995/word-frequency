@@ -69,9 +69,24 @@ string_bst::node_t* string_bst::get_root() const {
 }
 
 int string_bst::word_frequency(const tree_key &key) const {
-	
-	// ADD CODE HERE
-		
-	return 0;
+    return word_frequency_helper(root, key);
 }
 
+int string_bst::word_frequency_helper(node_t * const& n, tree_key const& key) const {
+    if(n == NULL) return 0;
+    
+    if( (n->data).word.compare(key) == 0  ){
+        return (n->data).freq;
+    }
+    
+    node_t* leftNode = n->left;
+    node_t* rightNode = n->right;
+    int freq = 0;
+    if(leftNode != NULL)
+        freq += word_frequency_helper(leftNode, key);
+    
+    if(rightNode != NULL)
+        freq += word_frequency_helper(rightNode, key);
+    
+    return freq;
+}

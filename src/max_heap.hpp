@@ -76,6 +76,15 @@ class max_heap
 	top of the Heap is returned.
   -----------------------------------------------------------------------*/	
   text_item& top();
+    
+    /*-----------------------------------------------------------------------
+     Returns a reference to the bottom of the heap.
+     
+     Precondition:  Heap is nonempty.
+     Postcondition: Heap has not been modified, a reference to the
+     top of the Heap is returned.
+     -----------------------------------------------------------------------*/
+    text_item& bottom();
   
   /*-----------------------------------------------------------------------
     Removes the item with the highest key from the heap.
