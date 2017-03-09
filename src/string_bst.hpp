@@ -123,6 +123,13 @@ class string_bst
   void insert_helper(node_t *& n, tree_key const& key);
   void print_in_order(node_t *n) const;
   void remove(node_t *& n);
+    /*-----------------------------------------------------------------------
+     Returns an integer tht represents word frequency
+     
+     Precondition:  Tree is nonempty.
+     Postcondition: Tree has not been modified, pointer to root node has
+     been returned.
+     -----------------------------------------------------------------------*/
   int word_frequency_helper(node_t * const& n, tree_key const& key) const;
     
 }; // end of class declaration

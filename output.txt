@@ -1,0 +1,206 @@
+
+***************************************************************************
+* Tests for part 1							  *
+* The program was tested with all the words in sample1.txt. 		  *	
+* Some words not included in the txt file were added to the test cases to *
+* test the zero frequency case.						  *
+***************************************************************************
+
+BEGINNING TESTS FOR PART 1A
+*** TESTING INSERT ***
+adding item1,  with number 10 to heap
+Top of heap is: text_item{"item1",10}
+adding item2,  with number 40 to heap
+Top of heap is: text_item{"item2",40}
+adding item3,  with number 10 to heap
+Top of heap is: text_item{"item2",40}
+adding item4,  with number 9 to heap
+Top of heap is: text_item{"item2",40}
+adding item5,  with number 9 to heap
+Top of heap is: text_item{"item2",40}
+Last item in the heap is (noswaptest,0): text_item{"noswaptest",0}
+Top of heap is (multiswaptest, 101): text_item{"multiswaptest",101}
+
+BEGINNING TESTS FOR PART 1B
+*** TESTING DELETEMAX ***
+Item returned from heap delete (multiswaptest,101): text_item{"multiswaptest",101}
+Top of heap is now: text_item{"item2",40}
+Top of heap is now (testitem1,130): text_item{"testitem1",130}
+Item returned from heap delete (testitem1, 130): text_item{"testitem1",130}
+Top of heap is now the right child (testitem5, 125): text_item{"testitem5",125}
+Item returned from heap delete (testitem5, 125): text_item{"testitem5",125}
+Top of heap is now the left child (testitem5, 120): text_item{"testitem2",120}
+Deleting item from an empty heap. Size: 0
+Cannot delete, heap is empty!
+
+***************************************************************************
+* Tests for part 2							  *
+* The program was tested with all the words in sample1.txt. 		  *	
+* Some words not included in the txt file were added to the test cases to *
+* test the zero frequency case.						  *
+***************************************************************************
+
+BEGINNING TESTS FOR PART 2
+Found: is in the input file 3 time(s).
+Testing word frequency of *123* in sample1.txt. 
+Expected word frequency: 0 Returned word frequency: 0
+Frequency match confirmed. Test Passed for 123
+Testing word frequency of *a* in sample1.txt. 
+Expected word frequency: 4 Returned word frequency: 4
+Frequency match confirmed. Test Passed for a
+Testing word frequency of *alphabetically* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for alphabetically
+Testing word frequency of *and* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for and
+Testing word frequency of *at* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for at
+Testing word frequency of *attention* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for attention
+Testing word frequency of *because* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for because
+Testing word frequency of *bst* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for bst
+Testing word frequency of *calculate* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for calculate
+Testing word frequency of *careful* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for careful
+Testing word frequency of *carefully* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for carefully
+Testing word frequency of *computer* in sample1.txt. 
+Expected word frequency: 0 Returned word frequency: 0
+Frequency match confirmed. Test Passed for computer
+Testing word frequency of *considered* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for considered
+Testing word frequency of *deciding* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for deciding
+Testing word frequency of *detail* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for detail
+Testing word frequency of *difficult* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for difficult
+Testing word frequency of *each* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for each
+Testing word frequency of *function* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for function
+Testing word frequency of *how* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for how
+Testing word frequency of *if* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for if
+Testing word frequency of *implement* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for implement
+Testing word frequency of *index* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for index
+Testing word frequency of *is* in sample1.txt. 
+Expected word frequency: 3 Returned word frequency: 3
+Frequency match confirmed. Test Passed for is
+Testing word frequency of *letter* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for letter
+Testing word frequency of *not* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for not
+Testing word frequency of *of* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for of
+Testing word frequency of *one* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for one
+Testing word frequency of *ruishen* in sample1.txt. 
+Expected word frequency: 0 Returned word frequency: 0
+Frequency match confirmed. Test Passed for ruishen
+Testing word frequency of *sort* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for sort
+Testing word frequency of *taken* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for taken
+Testing word frequency of *time* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for time
+Testing word frequency of *to* in sample1.txt. 
+Expected word frequency: 4 Returned word frequency: 4
+Frequency match confirmed. Test Passed for to
+Testing word frequency of *when* in sample1.txt. 
+Expected word frequency: 3 Returned word frequency: 3
+Frequency match confirmed. Test Passed for when
+Testing word frequency of *word* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for word
+Testing word frequency of *words* in sample1.txt. 
+Expected word frequency: 2 Returned word frequency: 2
+Frequency match confirmed. Test Passed for words
+Testing word frequency of *writing* in sample1.txt. 
+Expected word frequency: 1 Returned word frequency: 1
+Frequency match confirmed. Test Passed for writing
+ALL TESTS PASSED!!!!!
+
+***************************************************************************
+* Tests for part 3							  *
+* at_least_length and starts_with functions were tested with different 	  *
+* letters and lengths							  *
+***************************************************************************
+
+BEGINNING TESTS FOR PART 3
+*** Top 5 most frequent words: ***
+text_item{"a",4}
+text_item{"to",4}
+text_item{"is",3}
+text_item{"when",3}
+text_item{"calculate",2}
+
+*** Top 5 most frequent words with at least 8 letters ***
+text_item{"calculate",2}
+text_item{"alphabetically",2}
+text_item{"function",1}
+text_item{"attention",1}
+text_item{"difficult",1}
+
+*** Top 5 most frequent words that begin with c ***
+text_item{"calculate",2}
+text_item{"careful",1}
+text_item{"carefully",1}
+text_item{"considered",1}
+
+*** Top 5 most frequent words with at least 6 letters ***
+text_item{"calculate",2}
+text_item{"alphabetically",2}
+text_item{"writing",1}
+text_item{"function",1}
+text_item{"careful",1}
+
+*** Top 5 most frequent words that begin with b ***
+text_item{"bst",1}
+text_item{"because",1}
+
+*** Top 5 most frequent words with at least 10 letters ***
+text_item{"alphabetically",2}
+text_item{"considered",1}
+
+*** Top 5 most frequent words that begin with a ***
+text_item{"a",4}
+text_item{"alphabetically",2}
+text_item{"and",2}
+text_item{"at",1}
+text_item{"attention",1}
+
+*** Top 5 most frequent words with at least 15 letters ***
+
+*** Top 5 most frequent words that begin with z ***

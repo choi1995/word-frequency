@@ -194,11 +194,11 @@ void at_least_length(max_heap hp, size_t num_letters) {
 	cout << "*** Top 5 most frequent words with at least " 
 		<< num_letters << " letters ***" << std::endl;
 		
-	//--- Add code to print out the 5 most common
-	//--- words of length at least <num_letters>
     int heap_size = hp.size();
     max_heap* new_hp = new max_heap(heap_size);
     
+    // iterates through all elements in the heap and inserts all words with at least num_letters
+    // to the new heap.
     for(int i=0; i < heap_size; i++){
         try {
             text_item top = hp.delete_max();
@@ -209,19 +209,19 @@ void at_least_length(max_heap hp, size_t num_letters) {
         }
     }
 
+    // prints the top 5 elements in the heap.
     overall_most_freq(*new_hp);
 }
 
 void starts_with(max_heap hp, char starts_with_letter) {
 	cout << "*** Top 5 most frequent words that begin with " 
 		<< starts_with_letter << " ***" << std::endl;
-		
-	//--- Add code to print out the 5 most common words
-	//--- that start with the letter <starts_with_letter>
 
     int heap_size = hp.size();
     max_heap* new_heap = new max_heap(heap_size);
     
+    // iterates through the heap and adds all the elements that starts with the specified letter
+    // to the new heap
     for(int i=0; i < heap_size; i++){
         try {
             text_item top = hp.delete_max();
@@ -231,6 +231,7 @@ void starts_with(max_heap hp, char starts_with_letter) {
             std::cout << e.what() << std::endl;
         }
     }
+    // prints the top 5 nodes in the new heap
 	overall_most_freq(*new_heap);
 }
 
@@ -263,9 +264,9 @@ void text_analysis_tester(string_bst &tree) {
     std::cout << "*** Top 5 most frequent words: ***" << std::endl;
 	overall_most_freq(copy_to_heap(tree));
 	std::cout << std::endl;
-	at_least_length(copy_to_heap(tree), 8); // change the 8 to test other string-lengths
+	at_least_length(copy_to_heap(tree), 15); // change the 8 to test other string-lengths
 	std::cout << std::endl;
-	starts_with(copy_to_heap(tree), 'c'); // change the 'c' to test words that starts_with_letter
+	starts_with(copy_to_heap(tree), 'z'); // change the 'c' to test words that starts_with_letter
 											// with different characters
 }
 
